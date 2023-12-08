@@ -1,4 +1,5 @@
 import React from "react"
+import { HeaderNav } from "./components/HeaderNav"
 import { PageGreeter } from "./components/PageGreeter"
 import { Background } from "./components/Background"
 import { GithubProjects } from "./components/GithubProjects"
@@ -10,19 +11,27 @@ function App() {
 
   return (
     <>
+      <HeaderNav/>
+
       <section className="dotted-line"/>
 
-      <PageGreeter/>
+      <main>
+        <PageGreeter/>
 
-      <Background/>
+        <Background/>
 
-      <GithubProjects/>
+        <GithubProjects/>
 
-      <Education/>
+        <Education/>
 
-      <QuoteSection/>
+        <QuoteSection/>
 
-      <JobExperience/>
+        <JobExperience/>
+      </main>
+
+      <footer>
+        <p>Made with 🫶🏽 in Florida</p>    
+      </footer>
     </>
   )
 }

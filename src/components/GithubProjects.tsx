@@ -13,23 +13,16 @@ import { CodingProject } from './CodingProjectItem'
 export function GithubProjects() {
   return (
     <nav className="github-projects">
-      <div>
-        {/* <ul>
-          <li><img src={GithubLogo} alt ="Github logo"/></li>
-          <li><h2>Github Projects</h2></li>
-          <li style="font-size: 19px;"><a href="https://github.com/kprieto14">Check it out!</a></li>
-          <li><a href="https://github.com/kprieto14"><img src={ExportIcon} alt="Export Icon"/></a></li>
-        </ul> */}
-
-        <ul>
-          <li><img src={ GithubLogo } alt="" /></li>
-          <li><h2>GitHub Projects</h2></li>
-          <li><a href="https://github.com/kprieto14">Check it Out!</a></li>
-          <li><a href="https://github.com/kprieto14"><img src={ExportIcon} alt="Export Icon"/></a></li>
-        </ul>
+      <header>
+        <div>
+          <img src={ GithubLogo } alt="Picture of github's logo" />
+          <h2>GitHub Projects</h2>
+          <a href="https://github.com/kprieto14">Check it Out!</a>
+          <a href="https://github.com/kprieto14"><img src={ ExportIcon } alt="Export Icon"/></a>
+        </div>
         
         <p>Here is a selection of projects I have created throughout my studies:</p>
-      </div>
+      </header>
 
       <section className='github-grid-container'>
         <CodingProject 

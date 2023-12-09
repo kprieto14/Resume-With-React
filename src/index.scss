@@ -28,6 +28,7 @@ li, ul {
 .page-header {
     position: fixed;
     border: 1px solid #707070;
+    border-width: 0 0 1px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(21px);
     -webkit-backdrop-filter: blur(21px);
@@ -307,17 +308,29 @@ footer {
   }
 
   @media only screen and (max-width: 740px) {
+    .page-header {
+        padding: 0 1rem;
+    }
+    
     header div, .page-greeter {
         flex-direction: column;
 
         h1, h2 {
             text-align: center;
         }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 
     .background {
         h2 {
-            text-align: left;
+            text-align: center;
         }
 
         .quotations-section {
@@ -347,6 +360,12 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    .education, .job-experience {
+        h2 {
+            text-align: center;
+        }
     }
   }
 

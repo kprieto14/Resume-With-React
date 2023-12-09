@@ -11,7 +11,6 @@ export function Education() {
     <section className="education">
       <header>
         <img src={ GradIcon } alt="Icon of a graduation cap"/>
-        {/* <h2 style="padding-left: 15px;">Education</h2> */}
         <h2>Education</h2>
       </header>
 

@@ -311,10 +311,8 @@ footer {
     .education, .job-experience {
         header {
             padding-left: 0;
-        }
-
-        h2 {
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
     }
 

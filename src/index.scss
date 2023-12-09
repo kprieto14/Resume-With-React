@@ -41,7 +41,7 @@ li, ul {
         justify-content: space-between;
         max-width: 79.5rem;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
     h1 {
@@ -308,10 +308,19 @@ footer {
 }
 
 @media only screen and (max-width: 740px) {
-    .education, .job-experience, .background h2 {
+    .education, .job-experience {
         header {
             padding-left: 0;
         }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .background h2 {
+        padding-left: 0;
+        text-align: center;
     }
     
     header div, .page-greeter {

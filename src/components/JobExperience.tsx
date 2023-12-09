@@ -10,7 +10,6 @@ export function JobExperience() {
     <section className="job-experience">
       <header>
         <img src={ Briefcase} alt="Icon of a briefcase"/>
-        {/* <h2 style="padding-left: 15px;">Job Experience</h2> */}
         <h2>Job Experience</h2>
       </header>
 

@@ -3,7 +3,6 @@ import { HeaderNav } from "./components/HeaderNav"
 import { PageGreeter } from "./components/PageGreeter"
 import { Background } from "./components/Background"
 import { GithubProjects } from "./components/GithubProjects"
-import { QuoteSection } from './components/QuoteSections'
 import { Education } from "./components/Education"
 import { JobExperience } from './components/JobExperience'
 
@@ -13,7 +12,9 @@ function App() {
     <>
       <HeaderNav/>
 
-      <section className="dotted-line"/>
+      <div className="dotted-container">
+        <section className="dotted-line"/>
+      </div>
 
       <main>
         <PageGreeter/>
@@ -23,8 +24,6 @@ function App() {
         <GithubProjects/>
 
         <Education/>
-
-        <QuoteSection/>
 
         <JobExperience/>
       </main>

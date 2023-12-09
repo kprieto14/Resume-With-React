@@ -16,15 +16,17 @@ export function ExperienceItem({ photoSource, photoDescription, name, title, dat
         <article className="box-item">
             <img src={ photoSource } alt={ photoDescription }/>
 
-            <h3>{ name }</h3>
-            <hr/>
-            <h4>{ title }</h4>
+            <aside>
+                <h3>{ name }</h3>
+                <hr/>
+                <h4>{ title }</h4>
 
-            <p>{ dates }</p>
-            
-            <p>{ description }</p>
-            <p>{ secondDescription }</p>
-            <p>{ thirdDecsription }</p>
+                <p>{ dates }</p>
+                
+                <p>{ description }</p>
+                <p>{ secondDescription }</p>
+                <p>{ thirdDecsription }</p>
+            </aside>
         </article>
     )
 }

@@ -8,11 +8,11 @@ import LIFE from '../assets/LIFE_ICO.png'
 export function JobExperience() {
   return (
     <section className="job-experience">
-      <div className="job-container">
+      <header>
         <img src={ Briefcase} alt="Icon of a briefcase"/>
         {/* <h2 style="padding-left: 15px;">Job Experience</h2> */}
         <h2>Job Experience</h2>
-      </div>
+      </header>
 
     <ExperienceItem
       photoSource={ Yreads}

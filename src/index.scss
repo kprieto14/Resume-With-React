@@ -31,14 +31,14 @@ li, ul {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(21px);
     -webkit-backdrop-filter: blur(21px);
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     padding: 0 1.5rem;
 
     div {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         max-width: 79.5rem;
         margin: 0 auto;
     }
@@ -65,7 +65,7 @@ li, ul {
 .page-greeter {
     display: flex;
     align-items: center;
-    max-width: 1272px;
+    max-width: 69rem;
     margin: 0 auto;
     gap: 2.625rem;
     margin-bottom: 8rem;
@@ -81,62 +81,196 @@ li, ul {
         font-size: clamp(1rem,2rem, 2.5rem);
         margin: 0;
     }
+
+    img {
+        z-index: 1;
+    }
   }
 
-.background, .quote-section {
-    padding: 0 1rem;
+.background {
     border: 1px solid #707070;
     border-width: 1px 0px;
-    padding: 45px 0px;
     width: 100%;
     background: rgba(250, 250, 250, 0.1);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 
     div {
-        max-width: 79.5rem;
+        max-width: 69rem;
         margin: 0 auto;
+        padding: 2.5rem 0;
     }
 
     h2 {
         font-size: 2.4rem;
+        padding: 1rem 0 0 9rem;
+        margin: 0;
     }
 
     p {
         font-size: 1.18rem;
+        font-weight: 300;
+        padding: 0 1rem;
+    }
+
+    .quotations-section {
+        display: flex;
+        gap: 1.5rem;
     }
 }
 
 .github-projects {
-    max-width: 79.5rem;
+    max-width: 69rem;
     margin: 0 auto;
+    padding: 0 1rem 0 18rem;
 
     header div{
         display: flex;
+        gap: 1rem;
         align-items: center;
     }
 
     .github-grid-container {
+        max-width: 55rem;
         display: grid;
         align-items: start;
-        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-        grid-template-rows: repeat(2, 19rem);
-        grid-auto-rows: 19rem;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 17rem));
+        grid-template-rows: repeat(2, 20rem);
+        grid-auto-rows: 20rem;
         grid-gap: 2rem;
+        justify-content: stretch;
     }
 
     .border img {
+        max-width: 17rem;
+        height: 15rem;
+        border-radius: 1.8rem;
+        margin-bottom: .8rem;
         transition: .5s ease;
-      }
-        
-    .border img:hover{
-        box-shadow: 0 0 0 10px #FFFFFF;
-        transition: .5s ease;
+
+        &:hover {
+            box-shadow: 0 0 0 10px #FFFFFF;
+            transition: .5s ease;
+        }
     }
 }
 
-  @media only screen and (max-width: 700px) {
+.education, .job-experience {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 69rem;
+
+    .certification-container {
+        border: 1px dashed #FFFFFF71;
+        border-radius: 25px;
+        height: fit-content;
+        padding: 24px;
+        background: rgba(250, 250, 250, 0.1);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+    }
+
+    header {
+        display: flex;
+        grid-column: span 2;
+        align-items: center;
+        gap: .7rem;
+        padding-left: 9rem;
+    }
+
+    p, h4 {
+        margin: 0;
+    }
+
+    .education-skills {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        gap: 5rem;
+
+        .box-item {
+            max-width: 38.5rem;
+        }
+    }
+}
+
+.box-item {
+    border: 1px solid #707070;
+    border-width: 0px 0px 0px 1px;
+    background: rgba(250, 250, 250, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    margin-bottom: 17px;
+    padding: 24px 34px;
+    display: flex;
+    column-gap: 35px;
+
+    img {
+        height: 5rem;
+        width: 5rem;
+        padding-top: 1rem;
+    }
+}
+
+footer {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.dotted-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 69rem;
+    padding-left: 9rem;
+
+    .dotted-line {
+        border: 2px dashed #FFFFFF;
+        border-width: 0 0px 0 2px;
+        width: 69rem;
+        height: 199rem;
+        position: absolute;
+        margin-top: 15rem;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
     header div, .page-greeter {
         flex-direction: column;
+
+        h1, h2 {
+            text-align: center;
+        }
+    }
+
+    .background {
+        h2 {
+            text-align: left;
+        }
+
+        .quotations-section {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .github-projects {
+        padding: 0 1rem;
+
+        .github-grid-container {
+            justify-content: center;
+        }
+
+        .border img {
+            max-width: 100%;
+        }
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .dotted-container {
+        display: none;
     }
   }

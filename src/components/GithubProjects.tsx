@@ -17,8 +17,8 @@ export function GithubProjects() {
         <div>
           <img src={ GithubLogo } alt="Picture of github's logo" />
           <h2>GitHub Projects</h2>
-          <a href="https://github.com/kprieto14">Check it Out!</a>
-          <a href="https://github.com/kprieto14"><img src={ ExportIcon } alt="Export Icon"/></a>
+          <a href="https://github.com/kprieto14">Check it Out! <img src={ ExportIcon } alt="Export Icon"/></a>
+          {/* <a href="https://github.com/kprieto14"><img src={ ExportIcon } alt="Export Icon"/></a> */}
         </div>
         
         <p>Here is a selection of projects I have created throughout my studies:</p>

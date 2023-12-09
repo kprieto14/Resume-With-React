@@ -26,19 +26,35 @@ export function GithubProjects() {
 
       <section className='github-grid-container'>
         <CodingProject 
+          projectLink='https://snowman-kp.netlify.app'
+          title='Snowman'
+          pictureLink={ Snowman }
+          pictureDescription='Screenshot of snowman game site'
+          description='A less grim variation of a popular game. As you guess letters correctly, a snowman will be built on the screen. Try to figure out the word in the least amount of tries as possible :)'
+        />
+
+        <CodingProject 
+          projectLink='https://hslcolorchooser.netlify.app'
+          title='Color Picker'
+          pictureLink={ HSL }
+          pictureDescription='Screenshot of HSL color picker site'
+          description='My version of a HSL color picker that implements useState from React.'
+        />
+
+        <CodingProject 
+          projectLink='https://kpminsweeper.netlify.app'
+          title='Minesweeper'
+          pictureLink={ Minesweeper }
+          pictureDescription='Screenshot of minesweeper game site'
+          description='A minesweeper game that runs by communicating with a back-end API server to create a front-end user-interface for a Minesweeper clone.'
+        />
+
+        <CodingProject 
           projectLink={'https://catshambo.netlify.app'}
           title={'Roshambo (Rock, Paper, Scissors)'}
           pictureLink={ Roshampaw }
           pictureDescription={'Picture of a screenshot of Roshampaw website'}
           description={'A front-end website incorporating Typescript that simulates a cat-themed, 2-player Roshambo game. Meow.'}
-        />
-
-        <CodingProject 
-          projectLink='https://kprieto14.github.io/cv-with-css/'
-          title='CV with CSS'
-          pictureLink={ CV }
-          pictureDescription='Screenshots of an old resume website'
-          description='My first attempt at a CV with basic HTML and CSS'
         />
 
         <CodingProject 
@@ -57,31 +73,15 @@ export function GithubProjects() {
           description='A front-end website that practiced implementing Javascript to simulate drum noises
           as keys are pressed down.'
         />
-
-        <CodingProject 
-          projectLink='https://kpminsweeper.netlify.app'
-          title='Minesweeper'
-          pictureLink={ Minesweeper }
-          pictureDescription='Screenshot of minesweeper game site'
-          description='A minesweeper game that runs by communicating with a back-end API server to create a front-end user-interface for a Minesweeper clone.'
-        />
-
-        <CodingProject 
-          projectLink='https://hslcolorchooser.netlify.app'
-          title='Color Picker'
-          pictureLink={ HSL }
-          pictureDescription='Screenshot of HSL color picker site'
-          description='My version of a HSL color picker that implements useState from React.'
-        />
-
-        <CodingProject 
-          projectLink='https://snowman-kp.netlify.app'
-          title='Snowman'
-          pictureLink={ Snowman }
-          pictureDescription='Screenshot of snowman game site'
-          description='A less grim variation of a popular game. As you guess letters correctly, a snowman will be built on the screen. Try to figure out the word in the least amount of tries as possible :)'
-        />
         
+        <CodingProject 
+          projectLink='https://kprieto14.github.io/cv-with-css/'
+          title='CV with CSS'
+          pictureLink={ CV }
+          pictureDescription='Screenshots of an old resume website'
+          description='My first attempt at a CV with basic HTML and CSS'
+        />
+
       </section>
     </nav>
   )

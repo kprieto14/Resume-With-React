@@ -123,6 +123,9 @@ li, ul {
     max-width: 69rem;
     margin: 0 auto;
     padding: 3.8rem 1rem 0 18rem;
+    // This allows the githutb projects to be able to be hovered over and clicked on while dotted line is on screen!
+    backdrop-filter: blur(.1px);
+    -webkit-backdrop-filter: blur(.1px);
 
     header div{
         display: flex;
@@ -160,7 +163,7 @@ li, ul {
         grid-auto-rows: 22rem;
         grid-gap: 2rem;
         justify-content: stretch;
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
     }
 
     .project-title {

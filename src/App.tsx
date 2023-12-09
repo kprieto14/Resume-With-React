@@ -29,7 +29,7 @@ function App() {
       </main>
 
       <footer>
-        <p>Made with 🫶🏽 in Florida</p>    
+        <p>Made with 🫶🏽 & <span><a href="https://github.com/kprieto14/Resume-With-React">React</a></span> in Florida</p>  
       </footer>
     </>
   )

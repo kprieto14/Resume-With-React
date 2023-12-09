@@ -122,12 +122,33 @@ li, ul {
 .github-projects {
     max-width: 69rem;
     margin: 0 auto;
-    padding: 0 1rem 0 18rem;
+    padding: 3.8rem 1rem 0 18rem;
 
     header div{
         display: flex;
         gap: 1rem;
         align-items: center;
+
+        h2 {
+            font-size: 2.4rem;
+            margin: 0;
+        }
+
+        a {
+            font-size: 1.18rem;
+
+            img {
+                height: 26px;
+                width: 29px;
+                padding-left: .5rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.18rem;
+        font-weight: 300;
+        margin: 1rem 0;
     }
 
     .github-grid-container {
@@ -135,10 +156,21 @@ li, ul {
         display: grid;
         align-items: start;
         grid-template-columns: repeat(auto-fit, minmax(14rem, 17rem));
-        grid-template-rows: repeat(2, 20rem);
-        grid-auto-rows: 20rem;
+        grid-template-rows: repeat(2, 22rem);
+        grid-auto-rows: 22rem;
         grid-gap: 2rem;
         justify-content: stretch;
+        padding: 2rem 0;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding-bottom: .5rem;
+    }
+
+    .project-description {
+        font-weight: 300;
     }
 
     .border img {
@@ -160,15 +192,28 @@ li, ul {
     flex-direction: column;
     margin: 2rem auto;
     max-width: 69rem;
+    padding: 0 1rem;
 
     .certification-container {
         border: 1px dashed #FFFFFF71;
         border-radius: 25px;
         height: fit-content;
-        padding: 24px;
+        padding: 2.5rem;
         background: rgba(250, 250, 250, 0.1);
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
+
+        h3 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+        
+        p {
+            margin: 0;
+            font-weight: 300;
+        }
     }
 
     header {
@@ -176,11 +221,7 @@ li, ul {
         grid-column: span 2;
         align-items: center;
         gap: .7rem;
-        padding-left: 9rem;
-    }
-
-    p, h4 {
-        margin: 0;
+        padding: 0 0 1rem 9rem;
     }
 
     .education-skills {
@@ -202,7 +243,7 @@ li, ul {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     margin-bottom: 17px;
-    padding: 24px 34px;
+    padding: 1.5rem 2rem;
     display: flex;
     column-gap: 35px;
 
@@ -210,6 +251,32 @@ li, ul {
         height: 5rem;
         width: 5rem;
         padding-top: 1rem;
+    }
+
+    h3, h4, h5, p {
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        padding-bottom: .5rem;
+    }
+
+    h5, p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    h5 {
+        padding-bottom: 1.5rem;
+    }
+
+    p {
+        padding-top: .75rem;
     }
 }
 
@@ -224,12 +291,13 @@ footer {
     margin: 0 auto;
     max-width: 69rem;
     padding-left: 9rem;
+    z-index: -1;
 
     .dotted-line {
         border: 2px dashed #FFFFFF;
         border-width: 0 0px 0 2px;
         width: 69rem;
-        height: 199rem;
+        height: 230rem;
         position: absolute;
         margin-top: 15rem;
     }
@@ -257,7 +325,11 @@ footer {
     }
 
     .github-projects {
-        padding: 0 1rem;
+        padding: 1.5rem 1rem 0 1rem;
+
+        p {
+            text-align: center;
+        }
 
         .github-grid-container {
             justify-content: center;
@@ -266,6 +338,12 @@ footer {
         .border img {
             max-width: 100%;
         }
+    }
+
+    .education .education-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
   }
 

@@ -21,7 +21,7 @@ export function ExperienceItem({ photoSource, photoDescription, name, title, dat
                 <hr/>
                 <h4>{ title }</h4>
 
-                <p>{ dates }</p>
+                <h5>{ dates }</h5>
                 
                 <p>{ description }</p>
                 <p>{ secondDescription }</p>

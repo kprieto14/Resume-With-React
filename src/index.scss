@@ -86,7 +86,7 @@ li, ul {
     img {
         z-index: 1;
     }
-  }
+}
 
 .background {
     border: 1px solid #707070;
@@ -305,11 +305,15 @@ footer {
         position: absolute;
         margin-top: 15rem;
     }
-  }
+}
 
-  @media only screen and (max-width: 740px) {
+@media only screen and (max-width: 740px) {
     .page-header {
         padding: 0 1rem;
+
+        h2 {
+            padding-left: 0;
+        }
     }
     
     header div, .page-greeter {
@@ -365,12 +369,13 @@ footer {
     .education, .job-experience {
         h2 {
             text-align: center;
+            padding-left: 0;
         }
     }
-  }
+}
 
-  @media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .dotted-container {
         display: none;
     }
-  }
+}

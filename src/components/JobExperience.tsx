@@ -22,7 +22,7 @@ export function JobExperience() {
       description="Part-time position working with elementary aged students to teach literacy skills.
       Assists the Site Coordinators in planning and implementation of lesson plans, activities,
       and other tasks as needed."
-      secondDescription={'Assitance with classroom set-up, snack, clean-up, hallway transitions, and classroom management.'}
+      secondDescription={'Assistance with classroom set-up, snack, clean-up, hallway transitions, and classroom management.'}
       thirdDecsription={null}
     />
 
@@ -36,7 +36,7 @@ export function JobExperience() {
       department to work with various diagnoses such as anxiety, depression, eating disorders, and 
       other emotional/ behavioral disorders."
       secondDescription={'Assessment and documentation of leisure interests to new patients.'}
-      thirdDecsription={'Planning and implementation of activities to learn coping skills, emotional regulation, leisure education, social skills, and leisure resources in their community..'}
+      thirdDecsription={'Planning and implementation of activities to learn coping skills, emotional regulation, leisure education, social skills, and leisure resources in their community.'}
     />
 
     <ExperienceItem
